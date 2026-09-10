@@ -1,0 +1,35 @@
+services:
+  - type: web
+    name: mplad-sentinel
+    runtime: node
+    plan: free
+    buildCommand: npm install && npm run build
+    startCommand: npm run start --workspace=server
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+      - key: MONGODB_URI
+        sync: false
+      - key: JWT_SECRET
+        generateValue: true
+      - key: JWT_EXPIRES_IN
+        value: 7d
+      - key: ASTRA_API_KEY
+        sync: false
+      - key: ASTRA_API_URL
+        sync: false
+      - key: ASTRA_MODEL
+        sync: false
+      # Set this to this same service's own https URL after the first deploy (shown in the
+      # Render dashboard, e.g. https://mplad-sentinel.onrender.com) — it's a same-origin
+      # deployment (this one service serves both the API and the built frontend), so this only
+      # matters as a CORS fallback, not for normal operation.
+      - key: CLIENT_URL
+        sync: false
+      - key: UPLOAD_DIR
+        value: uploads
+      - key: MAX_UPLOAD_MB
+        value: 10
