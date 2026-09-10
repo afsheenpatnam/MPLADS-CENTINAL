@@ -1,0 +1,32 @@
+ANAMOLIES:
+
+⏱️ Time Anomaly Detection
+Detects unusual project delays by comparing actual progress against planned milestones, identifying projects at risk of exceeding scheduled completion timelines.
+💰 Cost Anomaly Detection
+Analyzes project expenditure patterns to identify abnormal spending, budget overruns, inflated invoices, and potential fund misuse.
+🏗️ Work Anomaly Detection
+Verifies whether reported work progress matches on-ground execution using GPS logs, image evidence, and activity updates to detect fake or incomplete work.
+FRAUD:
+📋 Sanction Report Verification
+Validates whether project activities, expenditures, and progress align with the approved sanction report, ensuring compliance with sanctioned objectives, budget allocations, and timelines.
+
+
+DETECT INEFFICIENCES:
+
+🏗️ Plan vs Construction Inefficiency
+Identifies deviations between the approved project plan and the actual construction executed on-site, ensuring that all sanctioned specifications and deliverables are properly implemented.
+🔍 Quality Check
+Evaluates the quality of construction materials and workmanship to ensure compliance with government standards, safety regulations, and project requirements.
+📦 Quantity Check
+Verifies whether the reported quantity of materials and completed work matches the actual on-site usage and construction progress.
+
+FRAUD:
+
+📋 Sanction Report Verification
+Validates whether project activities, expenditures, and progress align with the approved sanction report, ensuring compliance with sanctioned objectives, budget allocations, and timelines.
+📑 Condition Compliance Monitoring
+Continuously checks whether contractors and project stakeholders adhere to all government regulations, approval conditions, quality standards, and contractual obligations throughout project execution.
+💰 Expenditure Anomaly
+A significant difference has been detected between the project expenditure and the actual work completed, indicating potential financial inefficiencies or irregularities.
+📍 Scheduled Site Attendance Monitoring
+The system requires contractors to report at the project site on pre-assigned dates and times defined by the administration. Attendance is verified using GPS-based check-ins and geofencing mechanisms.
