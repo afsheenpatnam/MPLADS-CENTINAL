@@ -54,7 +54,7 @@ CSV IMPORT (officer: project baseline · contractor: daily activity)
                               ↓
                  SOCKET.IO push → OFFICER dashboard (live)
                               ↓
-                 ASTRA LLM explanation (optional)
+                 Groq LLM explanation (optional)
                               ↓
         OFFICER investigation ⇄ CONTRACTOR clarification ⇄ resolution
                               ↓
@@ -73,7 +73,7 @@ CSV IMPORT (officer: project baseline · contractor: daily activity)
   [`docs/ML.md`](docs/ML.md).
 - **CV**: `sharp` for image metadata + a hand-rolled difference-hash (dHash) for reuse/similarity
   detection, plus SHA-256 file hashing for exact duplicates.
-- **AI**: Astra LLM, used strictly as an explanation/summarization layer over pre-computed
+- **AI**: Groq LLM, used strictly as an explanation/summarization layer over pre-computed
   findings — never as the detector itself. Fails soft if unconfigured/unreachable.
 
 ## Setup
@@ -114,7 +114,7 @@ needed — Mongoose creates collections/indexes on first use.
 
 `server/src/services/astra/astraClient.ts` assumes an OpenAI-compatible chat-completions
 contract, so any provider using that shape works — you're not limited to a product literally
-named "Astra". `ASTRA_API_KEY` is read from the environment only, on the server — never sent to
+named "Groq". `Groq_API_KEY` is read from the environment only, on the server — never sent to
 or hardcoded in the frontend. Leaving it unset is fully supported (AI summaries show
 "temporarily unavailable"; deterministic detection is unaffected).
 
